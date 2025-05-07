@@ -63,14 +63,14 @@ It keeps our code clean, short, and safe.
 
 You don’t need to tell TypeScript everything — it already understands a lot!
 
-<h1>📘 Interfaces vs Types in TypeScript</h1>
+<h1>Question: What are some differences between interfaces and types in TypeScript?</h1>
 
-<h2>🤔 What are Interfaces and Types?</h2>
+<h2> What are Interfaces and Types?</h2>
 <p>
   In TypeScript, both <code>interface</code> and <code>type</code> are used to describe the shape of data (like objects). But there are some small differences between them.
 </p>
 
-<h2>✅ 1. Basic Usage</h2>
+<h2> 1. Basic Usage</h2>
 <p>Both can define an object:</p>
 
 <h3>Using <code>interface</code>:</h3>
@@ -87,9 +87,9 @@ You don’t need to tell TypeScript everything — it already understands a lot!
 };
 </code></pre>
 
-<p>✅ Both are valid and do the same thing here.</p>
+<p>Both are valid and do the same thing here.</p>
 
-<h2>✅ 2. Extending</h2>
+<h2> 2. Extending</h2>
 
 <p><strong>Interfaces</strong> can be extended using <code>extends</code>:</p>
 <pre><code>interface Student extends Person {
@@ -103,7 +103,7 @@ You don’t need to tell TypeScript everything — it already understands a lot!
 };
 </code></pre>
 
-<h2>✅ 3. Merging</h2>
+<h2> 3. Merging</h2>
 <p><code>interface</code> can be declared more than once, and TypeScript merges them:</p>
 <pre><code>interface Book {
   title: string;
@@ -116,7 +116,7 @@ interface Book {
 
 <p><code>type</code> cannot be re-declared. It will throw an error.</p>
 
-<h2>✅ 4. More Than Just Objects</h2>
+<h2> 4. More Than Just Objects</h2>
 <p><code>type</code> is more flexible. You can use it for:</p>
 
 <ul>
@@ -134,32 +134,32 @@ interface Book {
   </tr>
   <tr>
     <td>Define object shape</td>
-    <td>✅ Yes</td>
-    <td>✅ Yes</td>
+    <td> Yes</td>
+    <td> Yes</td>
   </tr>
   <tr>
     <td>Extendable</td>
-    <td>✅ With <code>extends</code></td>
-    <td>✅ With <code>&</code></td>
+    <td> With <code>extends</code></td>
+    <td> With <code>&</code></td>
   </tr>
   <tr>
     <td>Can be merged</td>
-    <td>✅ Yes</td>
-    <td>❌ No</td>
+    <td> Yes</td>
+    <td> No</td>
   </tr>
   <tr>
     <td>Supports primitives, unions, tuples</td>
-    <td>❌ No</td>
-    <td>✅ Yes</td>
+    <td> No</td>
+    <td> Yes</td>
   </tr>
   <tr>
     <td>Best for classes</td>
-    <td>✅ Yes</td>
-    <td>😐 Sometimes</td>
+    <td> Yes</td>
+    <td> Sometimes</td>
   </tr>
 </table>
 
-<h2>✅ Final Thoughts</h2>
+<h2> Final Thoughts</h2>
 <p>
   Use <code>interface</code> when you're working with objects or classes.<br/>
   Use <code>type</code> when you need to combine types, define functions, or handle unions.<br/>
