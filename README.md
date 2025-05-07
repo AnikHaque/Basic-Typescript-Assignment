@@ -1,6 +1,6 @@
 #  Blog
 
-<h1>What is type inference in TypeScript? Why is it helpful?</h1>
+<h1>Q: What is type inference in TypeScript? Why is it helpful?</h1>
 
 <h2> Definition</h2>
 <p>
@@ -74,7 +74,9 @@ let isStudent = true;
 </ul>
 
 
-<h1>Question: What are some differences between interfaces and types in TypeScript?</h1>
+
+
+<h1>Q: What are some differences between interfaces and types in TypeScript?</h1>
 
 <h2> What are Interfaces and Types?</h2>
 <p>
