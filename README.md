@@ -1,15 +1,15 @@
 # 📘 Blog
 
 
-## QUESTION: What is type inference in TypeScript? Why is it helpful? 
+# QUESTION: What is type inference in TypeScript? Why is it helpful? 
 
-# Definition: 
+### Definition: 
 TypeScript can guess the type of a variable, even if we don’t write the type ourselves.
 
 For example:
 Innstead of writing: let name: string = "Alice" We can just write let name = "Alice" because TypeScript will automatically understand that name is a string. This is called type inference.
 
-# Why is Type Inference Helpful?
+### Why is Type Inference Helpful?
 Type inference helps us in many simple but powerful ways:
 
 1. We don’t have to write the type every time. It saves time and keeps the code short.
@@ -17,7 +17,7 @@ Type inference helps us in many simple but powerful ways:
 3. Even if we don’t write the type, TypeScript still checks for errors.
 4. You don’t need to know all the types right away. TypeScript helps you while you learn.
 
-#Real Example
+### Real Example
 Let’s say 
 
 let age = 25;
@@ -40,7 +40,7 @@ TypeScript will give an error, because "twenty-five" is a string, not a number.
 Even though we didn’t write age: number, TypeScript already knows the type is number.
 That’s the power of type inference!
 
-#Use Case in Real Projects
+### Use Case in Real Projects
 In small or big projects, we often declare variables and give values immediately.
 For example:
 const products = ["Pen", "Book", "Phone"];
