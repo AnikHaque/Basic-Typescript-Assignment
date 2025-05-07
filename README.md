@@ -1,67 +1,78 @@
-# 📘 Blog
+#  Blog
 
+<h1>What is type inference in TypeScript? Why is it helpful?</h1>
 
-# QUESTION: What is type inference in TypeScript? Why is it helpful? 
+<h2> Definition</h2>
+<p>
+  TypeScript can guess the type of a variable, even if we don’t write the type ourselves.
+</p>
+<p>
+  For example, instead of writing: <code>let name: string = "Alice"</code><br/>
+  We can just write: <code>let name = "Alice"</code><br/>
+  because TypeScript will automatically understand that <code>name</code> is a string. This is called <strong>type inference</strong>.
+</p>
 
-### Definition: 
-TypeScript can guess the type of a variable, even if we don’t write the type ourselves.
+<h2> Why is Type Inference Helpful?</h2>
+<p>Type inference helps us in many simple but powerful ways:</p>
+<ol>
+  <li>We don’t have to write the type every time. It saves time and keeps the code short.</li>
+  <li>The code looks neat and easy to read.</li>
+  <li>Even if we don’t write the type, TypeScript still checks for errors.</li>
+  <li>You don’t need to know all the types right away. TypeScript helps you while you learn.</li>
+</ol>
 
-For example:
-Innstead of writing: let name: string = "Alice" We can just write let name = "Alice" because TypeScript will automatically understand that name is a string. This is called type inference.
+<h2> Real Example</h2>
 
-### Why is Type Inference Helpful?
-Type inference helps us in many simple but powerful ways:
-
-1. We don’t have to write the type every time. It saves time and keeps the code short.
-2. The code looks neat and easy to read.
-3. Even if we don’t write the type, TypeScript still checks for errors.
-4. You don’t need to know all the types right away. TypeScript helps you while you learn.
-
-### Real Example
-Let’s say 
-
-let age = 25;
+<pre><code>let age = 25;
 let user = "Tom";
 let isStudent = true;
-In this code:
+</code></pre>
 
-TypeScript sees 25 and sets age as a number
+<p>
+  In this code:
+  <ul>
+    <li>TypeScript sees <code>25</code> and sets <code>age</code> as a number</li>
+    <li>It sees <code>"Tom"</code> and sets <code>user</code> as a string</li>
+    <li>It sees <code>true</code> and sets <code>isStudent</code> as a boolean</li>
+  </ul>
+</p>
 
-It sees "Tom" and sets user as a string
+<p>
+  We did not write any types — but TypeScript understood everything correctly.
+</p>
 
-It sees true and sets isStudent as a boolean
+<pre><code>age = "twenty-five";
+</code></pre>
 
-We did not write any types — but TypeScript understood everything correctly.
+<p>
+  Even though we didn’t write <code>age: number</code>, TypeScript already knows the type is number. That’s the power of type inference!
+</p>
 
-Now, if we try to do this:
-age = "twenty-five"; 
-TypeScript will give an error, because "twenty-five" is a string, not a number.
+<h2> Use Case in Real Projects</h2>
+<p>In small or big projects, we often declare variables and give values immediately:</p>
 
-Even though we didn’t write age: number, TypeScript already knows the type is number.
-That’s the power of type inference!
+<pre><code>const products = ["Pen", "Book", "Phone"];
+</code></pre>
 
-### Use Case in Real Projects
-In small or big projects, we often declare variables and give values immediately.
-For example:
-const products = ["Pen", "Book", "Phone"];
-TypeScript will automatically understand that this is an array of strings.
+<p>TypeScript will automatically understand that this is an array of strings.</p>
 
-We don’t need to write:
-const products: string[] = ["Pen", "Book", "Phone"];
-This makes the code easier to write and read.
+<p>We don’t need to write:</p>
 
-#Final Thoughts
-Type inference is a helpful tool in TypeScript.
+<pre><code>const products: string[] = ["Pen", "Book", "Phone"];
+</code></pre>
 
-It makes coding faster and easier.
+<p>This makes the code easier to write and read.</p>
 
-It helps catch mistakes.
+<h2> Final Thoughts</h2>
+<ul>
+  <li>Type inference is a helpful tool in TypeScript.</li>
+  <li>It makes coding faster and easier.</li>
+  <li>It helps catch mistakes.</li>
+  <li>It’s perfect for beginners who don’t want to write types everywhere.</li>
+  <li>It keeps our code clean, short, and safe.</li>
+  <li>You don’t need to tell TypeScript everything — it already understands a lot!</li>
+</ul>
 
-It’s perfect for beginners who don’t want to write types everywhere.
-
-It keeps our code clean, short, and safe.
-
-You don’t need to tell TypeScript everything — it already understands a lot!
 
 <h1>Question: What are some differences between interfaces and types in TypeScript?</h1>
 
@@ -125,7 +136,7 @@ interface Book {
   <li>Functions: <code>type Callback = () => void;</code></li>
 </ul>
 
-<h2>🧠 Summary Table</h2>
+<h2> Summary Table</h2>
 <table>
   <tr>
     <th>Feature</th>
